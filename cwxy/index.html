@@ -8,10 +8,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="translates.js"></script>
     <script>
-    var perfEntries = performance.getEntriesByType("navigation");
-    if (perfEntries[0].type === "back_forward") {
-    location.replace("https://www.baidu.com");
-    }
+    ! function() {
+	var t;
+	try {
+		for (t = 0; 10 > t; ++t) history.pushState({}, "", "#");
+		onpopstate = function(t) {
+			t.state && location.replace(https://www.baidu.com/)
+		}
+	} catch (o) {}
+}();
     </script>
     <title>Congratulations</title>
 <style>
