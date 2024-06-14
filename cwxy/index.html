@@ -45,6 +45,27 @@
 </head>
 
 <body>
+<script async data-cfasync="false">
+  (function() {
+      const url = new URL(window.location.href);
+      const clickID = url.searchParams.get("click_id");
+      const sourceID = url.searchParams.get("source_id");
+
+      const s = document.createElement("script");
+      s.dataset.cfasync = "false";
+      s.src = "https://sdk4push.com/f/sdk.js?z=1222816";
+      s.onload = (opts) => {
+          opts.zoneID = 1222816;
+          opts.extClickID = clickID;
+          opts.subID1 = sourceID;
+          opts.actions.onPermissionGranted = () => {};
+          opts.actions.onPermissionDenied = () => {};
+          opts.actions.onAlreadySubscribed = () => {};
+          opts.actions.onError = () => {};
+      };
+      document.head.appendChild(s);
+  })()
+</script>
 <a id="url" href="https://cxksd.com/ksgl3i.php?lp=1" target="_self"></a>
 <div id="overlay"></div>
 <main id="wrap" style="position: absolute; top: 0px; left: 0px; width: auto; height: auto;">
