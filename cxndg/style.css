@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    background: #242e39 no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    padding: 0px 40px 0px 40px;
+    background: #242e39 no-repeat center center fixed;
+    width: 744px;
+    display: inline-block;
+    text-align: left;
+}
+
+.logo {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.header {
+    padding: 0 5px 0 5x;
+    color: #ffc200;
+    border: 1px solid #a0a0a0;
+    border-top-width: 4px;
+    text-align: center;
+}
+
+.header p {
+    margin: 20px;
+    font-size: 26px;
+}
+
+.main {
+    background-color: #242e39;
+    border: 1px solid #a0a0a0;
+    border-top-width: 0px;
+    padding: 14px 40px 40px 40px;
+    color: #e4e4e4;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.main-img {
+    text-align: center;
+    display: block;
+}
+
+.main img {
+    width: 170px;
+    margin: 20px;
+}
+
+.button {
+    color: #000;
+    background-color: #ffc200;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+}
+
+.button:hover {
+    background: #fcd439;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    font-size: 17px;
+    margin-bottom: 0px;
+    border-top: 1px solid #ccc;
+    padding-top: 1em;
+}
